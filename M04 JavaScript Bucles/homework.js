@@ -153,9 +153,10 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-   if (num === 100 || num > 100 || num < 1000){
+   if ((num.toString()).length === 3){
       return true;
-   }else return false;
+   }
+   return false;
 }
 
 function doWhile(num) {
@@ -163,6 +164,13 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+   var contador = 8;
+   var resultado = 0
+   do{
+      resultado += 5;
+      contador -= 1;
+   }while (contador !== 0)
+   return (num + resultado);
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
